@@ -21,7 +21,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <Navbar name={appName} menu={menuItems} />
         </header>
         <main className="w-full flex justify-center mt-4">
-          <div className="w-8/10 py-6">
+          <div className="w-full py-6">
             {children}
           </div>
         </main>

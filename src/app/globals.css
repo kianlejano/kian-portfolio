@@ -4,3 +4,32 @@
 }
 
 
+
+/* PROFILE PIC STYLES */
+
+@keyframes minimalBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.profile-size {
+  @apply h-70 w-70 md:h-100 md:w-100;
+}
+
+.bounce-slow {
+  animation: minimalBounce 3s ease-in-out infinite;
+}
+
+.link-button {
+  @apply btn btn-ghost btn-circle text-4xl text-primary border-0 hover:bg-transparent;
+}
+
+/*END OF PROFILE PIC STYLES */
+
+/* GLOBAL STYLES */
+
+.hover-enlarge{
+  @apply hover:scale-120 transition duration-300 ease-in-out
+}
+
+/* END OF GLOBAL STYLES */
