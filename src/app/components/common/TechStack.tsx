@@ -17,7 +17,7 @@ export default function TechStack(props: TechStackType) {
       <div className="absolute -top-7 -left-7">
         <Title icon={Icon} description={description} bgColor={bgColor} textColor={textColor} borderColor={borderColor}/>
       </div>
-      <div className="pt-10 pb-4 px-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="pt-10 pb-4 px-4 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
         {technologies.map(({name, description, logo}, index) => (
             <div className="card bg-base-300 shadow-md border border-base-300 hover-enlarge-sm" key={index}>
                 <figure className="py-2 bg-base-200 flex justify-center items-center h-40">
