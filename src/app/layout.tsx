@@ -15,13 +15,13 @@ export const appName: NavbarType['name'] = SITE_METADATA.appName
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" data-theme="cmyk">
+    <html lang="en">
       <body>
         <header className="w-full py-2 shadow-sm">
           <Navbar name={appName} menu={menuItems} />
         </header>
-        <main className="w-full flex justify-center mt-4">
-          <div className="w-full py-6">
+        <main className="w-full flex justify-center py-6">
+          <div className="w-full">
             {children}
           </div>
         </main>

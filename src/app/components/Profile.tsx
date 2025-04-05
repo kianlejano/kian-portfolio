@@ -6,7 +6,7 @@ const info = PERSONAL_INFO;
 
 export default function Profile() {
   return (
-    <div className="flex flex-col items-center gap-y-6">
+    <div className="flex flex-col items-center gap-y-6 py-4">
       <div className="bg-base-300 profile-size rounded-full bounce-slow">
         <Image src="/images/profile.png" alt="Profile" width={500} height={500} priority={true} className="rounded-full" />
       </div>
@@ -15,11 +15,7 @@ export default function Profile() {
         <div className="text-5xl font-extrabold text-secondary">{info.position}</div>
         <div className="text-lg font-medium mt-2">{info.intro}</div>
       </div>
-      <div>
-        <button className="btn btn-outline btn-primary rounded-full hover-enlarge">
-          <RxDownload /> Download CV
-        </button>
-      </div>
+      
       <div className="flex space-x-1">
         {SOCIAL_LINKS.map(({ name, url, icon: Icon }) => (
           <div key={name}>
@@ -28,6 +24,11 @@ export default function Profile() {
             </a>
           </div>
         ))}
+      </div>
+      <div>
+        <button className="btn btn-outline btn-primary rounded-full hover-enlarge">
+          <RxDownload /> Resume
+        </button>
       </div>
     </div>
 

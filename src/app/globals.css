@@ -1,6 +1,6 @@
 @import "tailwindcss";
 @plugin "daisyui" {
-  themes: light --default, dark --prefersdark, cmyk, night;
+  themes: cmyk --default, night --prefersdark;
 }
 
 
@@ -27,6 +27,10 @@
 /*END OF PROFILE PIC STYLES */
 
 /* GLOBAL STYLES */
+
+.hover-enlarge-sm{
+  @apply hover:scale-105 transition duration-300 ease-in-out
+}
 
 .hover-enlarge{
   @apply hover:scale-120 transition duration-300 ease-in-out
