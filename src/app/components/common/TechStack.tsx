@@ -13,25 +13,25 @@ export default function TechStack(props: TechStackType) {
   } = title;
 
   return (
-    <div className="relative rounded-lg bg-base-200 h-full">
+    <div className="relative rounded-lg border border-base-200 h-full">
       <div className="absolute -top-7 -left-7">
         <Title icon={Icon} description={description} bgColor={bgColor} textColor={textColor} borderColor={borderColor}/>
       </div>
       <div className="pt-10 pb-4 px-4 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
         {technologies.map(({name, description, logo}, index) => (
-            <div className="card bg-base-300 shadow-md border border-base-300 hover-enlarge-sm" key={index}>
-                <figure className="py-2 bg-base-200 flex justify-center items-center h-40">
-                    <Image src={logo} alt={`${name}-logo`} width={100} height={100} className="w-24 h-24 object-contain"
-                    />
-                </figure>
-                <div className="card-body">
-                    <h2 className="card-title">{name}</h2>
-                    <p>{description}</p>
-                    <div className="card-actions justify-center">
-                    </div>
-                </div>
+          <label className="swap swap-flip border border-base-300 shadow-lg p-4 rounded-md hover-enlarge-sm" key={index}>
+            <input type="checkbox" />
+          
+            <div className="swap-on">
+              <div className="text-center">
+                <p className="font-extrabold">{name}</p>
+                <p>{description}</p>
+              </div>
             </div>
-            
+            <div className="swap-off flex justify-center items-center">
+              <Image src={logo} alt={`${name}-logo`} width={100} height={100} className="w-24 h-24 object-contain" />
+            </div>
+          </label>
         ))}
       </div>
     </div>

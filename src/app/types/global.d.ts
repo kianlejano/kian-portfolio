@@ -24,3 +24,12 @@ export type TechStackType = {
     title: TitleProps,
     technologies: Technology[],
 }
+
+export type ProjectType = {
+    name: string,
+    pic: string,
+    description: string,
+    createdAt: string,
+    link?: string,
+    githubRepo?: string,
+}

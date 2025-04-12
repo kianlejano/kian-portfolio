@@ -1,6 +1,6 @@
-import { FaGithub, FaLinkedin, FaTwitter,  FaDatabase, FaCode, FaHtml5,  } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter,  FaDatabase, FaCode } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
-import { SocialLink, TechStackType } from "@/app/types/global";
+import { ProjectType, SocialLink, TechStackType } from "@/app/types/global";
 
 export const SITE_METADATA = {
   appName: 'Kiyan',
@@ -33,7 +33,7 @@ export const SOCIAL_LINKS: SocialLink [] = [
 export const TECH_STACK: TechStackType[] = [
   {
     title: {
-      icon: FaHtml5,
+      icon: FaCode,
       description: 'Front-End',
     },
     technologies: [
@@ -81,8 +81,8 @@ export const TECH_STACK: TechStackType[] = [
   },
   {
     title: {
-      icon: FaCode,
-      description: 'Back-end',
+      icon: FaDatabase,
+      description: 'Back-end & Database',
     },
     technologies: [
       {
@@ -91,28 +91,20 @@ export const TECH_STACK: TechStackType[] = [
         logo: '/images/logos/nodejs.svg'
       },
       {
-        name: 'PHP',
-        description: 'A widely-used open-source scripting language especially suited for web development.',
-        logo: '/images/logos/php.svg'
-      },
-      {
-        name: 'Laravel',
-        description: 'A PHP backend framework known for elegant syntax and powerful tools.',
-        logo: '/images/logos/laravel.svg'
-      },
-      {
         name: 'ExpressJs',
         description: 'A minimal and flexible Node.js web application framework.',
         logo: '/images/logos/expressjs.svg'
       },
-    ]
-  },
-  {
-    title: {
-      icon: FaDatabase,
-      description: 'Database',
-    },
-    technologies: [
+      {
+        name: 'Sequelize',
+        description: ' A Node.js ORM for managing SQL databases with JavaScript.',
+        logo: '/images/logos/sequelize.svg'
+      },
+      {
+        name: 'PHP',
+        description: 'A widely-used open-source scripting language especially suited for web development.',
+        logo: '/images/logos/php.svg'
+      },
       {
         name: 'MySQL',
         description: 'A widely used open-source relational database management system.',
@@ -160,3 +152,15 @@ export const TECH_STACK: TechStackType[] = [
   },
 ]
 
+
+export const PROJECTS: ProjectType[] = [
+  {
+    name: 'NBA Updates',
+    pic: '/images/logos/nba-updates.svg',
+    description: "This project is a personal Laravel application built to explore REST API integration and modern frontend tools. It fetches NBA data from the Ball Don't Lie API and displays information of players, teams and game schedules. Built with Tailwind CSS and component-based Blade views, and deployed via Docker on Koyeb.",
+    createdAt: '2025-03-01',
+    link: 'https://nba-updates.koyeb.app/',
+    githubRepo: 'https://github.com/kianlejano/nba-updates'
+  },
+ 
+]
