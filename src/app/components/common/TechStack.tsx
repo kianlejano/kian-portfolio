@@ -19,7 +19,7 @@ export default function TechStack(props: TechStackType) {
       </div>
       <div className="pt-10 pb-4 px-4 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
         {technologies.map(({name, description, logo}, index) => (
-          <label className="swap swap-flip border border-base-300 shadow-lg p-4 rounded-md hover-enlarge-sm" key={index}>
+          <label className="swap swap-flip border border-base-300 shadow-lg p-4 rounded-md hover-enlarge-sm h-45" key={index}>
             <input type="checkbox" />
           
             <div className="swap-on">

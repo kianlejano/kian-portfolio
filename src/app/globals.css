@@ -5,7 +5,7 @@
 
 
 
-/* PROFILE PIC STYLES */
+/*------------------------ PROFILE PIC STYLES ------------------------ */
 
 @keyframes minimalBounce {
   0%, 100% { transform: translateY(0); }
@@ -24,9 +24,12 @@
   @apply btn btn-ghost btn-circle text-4xl text-primary border-0 hover:bg-transparent;
 }
 
-/*END OF PROFILE PIC STYLES */
+/*------------------------ END OF PROFILE PIC STYLES ------------------------ */
 
-/* GLOBAL STYLES */
+
+
+
+/*------------------------  GLOBAL STYLES ------------------------ */
 
 .hover-enlarge-sm{
   @apply hover:scale-105 transition duration-300 ease-in-out
@@ -36,8 +39,13 @@
   @apply hover:scale-120 transition duration-300 ease-in-out
 }
 
-/* END OF GLOBAL STYLES */
+/*------------------------  END OF GLOBAL STYLES ------------------------ */
 
-.clip-slant {
-  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+
+/*------------------------ PROJECT STYLES ------------------------ */
+
+.project-button {
+  @apply btn btn-primary btn-outline
 }
+
+/*------------------------  END OF PROJECT STYLES ------------------------ */

@@ -7,8 +7,10 @@ const info = PERSONAL_INFO;
 export default function Profile() {
   return (
     <div className="flex flex-col items-center gap-y-6 py-4">
-      <div className="bg-base-300 profile-size rounded-full bounce-slow">
-        <Image src="/images/profile.png" alt="Profile" width={500} height={500} priority={true} className="rounded-full" />
+      <div className="p-2 border-6 border-primary rounded-full bounce-slow">
+        <div className="bg-base-300 profile-size rounded-full">
+          <Image src="/images/profile.png" alt="Profile" width={500} height={500} priority={true} className="rounded-full" />
+        </div>
       </div>
       <div className="flex flex-col items-center text-center max-w-8/10 gap-y-2">
         <div className="text-4xl font-extrabold">Hi I'm {info.nickname},</div>

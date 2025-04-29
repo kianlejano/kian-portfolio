@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaTwitter,  FaDatabase, FaCode } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter,  FaDatabase, FaCode, FaTools } from "react-icons/fa";
 import { CgWebsite } from "react-icons/cg";
 import { ProjectType, SocialLink, TechStackType } from "@/app/types/global";
 
@@ -33,7 +33,7 @@ export const SOCIAL_LINKS: SocialLink [] = [
 export const TECH_STACK: TechStackType[] = [
   {
     title: {
-      icon: FaCode,
+      icon: CgWebsite,
       description: 'Front-End',
     },
     technologies: [
@@ -81,8 +81,8 @@ export const TECH_STACK: TechStackType[] = [
   },
   {
     title: {
-      icon: FaDatabase,
-      description: 'Back-end & Database',
+      icon: FaCode,
+      description: 'Back-end',
     },
     technologies: [
       {
@@ -105,6 +105,14 @@ export const TECH_STACK: TechStackType[] = [
         description: 'A widely-used open-source scripting language especially suited for web development.',
         logo: '/images/logos/php.svg'
       },
+    ]
+  },
+  {
+    title: {
+      icon: FaDatabase,
+      description: 'Database',
+    },
+    technologies: [
       {
         name: 'MySQL',
         description: 'A widely used open-source relational database management system.',
@@ -115,6 +123,11 @@ export const TECH_STACK: TechStackType[] = [
         description: 'A powerful, open-source object-relational database with advanced features.',
         logo: '/images/logos/postgresql.svg'
       },
+      { 
+        name: 'MongoDB',
+        description: 'A flexible, open-source NoSQL database designed for high performance and scalability.',
+        logo: '/images/logos/mongodb.svg'
+      },
       {
         name: 'SQL',
         description: 'A language used to manage and query data in relational databases.',
@@ -124,7 +137,7 @@ export const TECH_STACK: TechStackType[] = [
   },
   {
     title: {
-      icon: CgWebsite,
+      icon: FaTools,
       description: 'Framework',
     },
     technologies: [
@@ -154,13 +167,13 @@ export const TECH_STACK: TechStackType[] = [
 
 
 export const PROJECTS: ProjectType[] = [
-  {
+   {
     name: 'NBA Updates',
     pic: '/images/logos/nba-updates.svg',
-    description: "This project is a personal Laravel application built to explore REST API integration and modern frontend tools. It fetches NBA data from the Ball Don't Lie API and displays information of players, teams and game schedules. Built with Tailwind CSS and component-based Blade views, and deployed via Docker on Koyeb.",
+    description: "This application fetches NBA data from the Ball Don't Lie API and displays information of players, teams and game schedules. Built with Tailwind CSS and component-based Blade views, and deployed via Docker on Koyeb.",
+    stack: ['Laravel', 'PHP', 'Tailwind CSS', 'Koyeb'],
     createdAt: '2025-03-01',
     link: 'https://nba-updates.koyeb.app/',
     githubRepo: 'https://github.com/kianlejano/nba-updates'
   },
- 
 ]

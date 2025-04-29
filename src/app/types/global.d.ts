@@ -28,8 +28,17 @@ export type TechStackType = {
 export type ProjectType = {
     name: string,
     pic: string,
+    stack: string[],
     description: string,
     createdAt: string,
     link?: string,
     githubRepo?: string,
+}
+
+export type ProjectProp = {
+    project: ProjectType
+}
+
+export type HeaderProp = {
+    title: string,
 }
