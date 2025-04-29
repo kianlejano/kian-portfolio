@@ -1,26 +1,51 @@
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@plugin "daisyui" {
+  themes: cmyk --default, night --prefersdark;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+
+/*------------------------ PROFILE PIC STYLES ------------------------ */
+
+@keyframes minimalBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.profile-size {
+  @apply h-70 w-70 md:h-100 md:w-100;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.bounce-slow {
+  animation: minimalBounce 3s ease-in-out infinite;
 }
+
+.link-button {
+  @apply btn btn-ghost btn-circle text-4xl text-primary border-0 hover:bg-transparent;
+}
+
+/*------------------------ END OF PROFILE PIC STYLES ------------------------ */
+
+
+
+
+/*------------------------  GLOBAL STYLES ------------------------ */
+
+.hover-enlarge-sm{
+  @apply hover:scale-105 transition duration-300 ease-in-out
+}
+
+.hover-enlarge{
+  @apply hover:scale-120 transition duration-300 ease-in-out
+}
+
+/*------------------------  END OF GLOBAL STYLES ------------------------ */
+
+
+/*------------------------ PROJECT STYLES ------------------------ */
+
+.project-button {
+  @apply btn btn-primary btn-outline
+}
+
+/*------------------------  END OF PROJECT STYLES ------------------------ */
